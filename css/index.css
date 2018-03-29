@@ -1,0 +1,103 @@
+
+root{
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+}
+
+
+p{
+    color:#07889B;
+    font-size: 1.2em;
+}
+
+h1{
+    color:#6dc8ed;
+}
+
+
+/* Propertie for Main section  */
+.rightside{
+    background-color: #EEE;
+    height: 100vh;
+    padding: 1em;
+}
+
+.element{
+    width: 70vw;
+}
+
+
+
+/* Propertie for Main Top Navbar  */
+
+
+.main-top-navbar {
+  overflow: hidden;
+  background-color: #4ABDAC;
+  position: fixed;
+  width: 100%;
+}
+
+.main-top-navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+
+.main-top-navbar a:hover {
+  background-color: #F7B733;
+  color: white;
+}
+
+
+.active {
+  background-color: #F7B733;
+  color: white;
+}
+
+.main-top-navbar .icon {
+  display: none;
+}
+
+
+/* Media queries to display navbar in responsive way : Here we are changing the class properties of navbar so we can change the class via Jquery; */
+
+@media screen and (max-width: 600px) {
+  .main-top-navbar a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .main-top-navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .main-top-navbar.responsive {position: relative;}
+  .main-top-navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .main-top-navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .main-top-navbar.responsive .dropdown {float: none;}
+  .main-top-navbar.responsive .dropdown-content {position: relative;}
+  .main-top-navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}

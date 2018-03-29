@@ -1,0 +1,23 @@
+
+/*ACCORDION */
+
+.accordion-header{
+    border: 1px solid #F7B733;
+    background-color: white;
+    color: grey;
+    font-size: 1.2em;
+    
+}
+
+
+.accordion-header a{
+	text-decoration: none;
+	padding: 0em 0.5em 0em 0.5em;
+	
+}
+
+.accordion-content{
+	border: 1px solid #07889B;
+	padding: 0em 0.5em 0em 0.5em;
+	background-color: #dcd0d0;
+}
