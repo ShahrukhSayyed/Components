@@ -15,7 +15,7 @@ $( document ).ready(function() {
 
     });
 
-    $("##second-button").click(() => {
+    $("#second-button").click(() => {
         $("#second-para").toggle(1000);
 
     });
